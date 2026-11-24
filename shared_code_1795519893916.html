@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Svetafor</title>
+<style>
+  body { margin: 0; min-height: 100vh; background: #2b2f3a;
+         display: flex; justify-content: center; align-items: center; }
+
+  .svetafor { display: flex; flex-direction: column; align-items: center; }
+
+  
+  .quti { background: #111; padding: 22px; border-radius: 24px;
+          display: flex; flex-direction: column; gap: 16px; }
+
+
+  .chiroq { width: 90px; height: 90px; border-radius: 50%; opacity: 0.2; }
+
+  
+  .qizil  { background: #ff3b30; animation: qizil 9s linear infinite; }
+  .sariq  { background: #ffd60a; animation: sariq 9s linear infinite; }
+  .yashil { background: #30d158; animation: yashil 9s linear infinite; }
+
+
+  @keyframes qizil {
+    0%, 40%   { opacity: 1; }
+    41%, 100% { opacity: 0.2; }
+  }
+
+  
+  @keyframes yashil {
+    0%, 40%   { opacity: 0.2; }
+    41%, 80%  { opacity: 1; }
+    81%, 100% { opacity: 0.2; }
+  }
+
+ 
+  @keyframes sariq {
+    0%, 80%   { opacity: 0.2; }
+    81%, 100% { opacity: 1; }
+  }
+
+  
+  .ustun { width: 24px; height: 120px; background: #555; }
+</style>
+</head>
+<body>
+
+<div class="svetafor">
+  <div class="quti">
+    <div class="chiroq qizil"></div>
+    <div class="chiroq sariq"></div>
+    <div class="chiroq yashil"></div>
+  </div>
+  <div class="ustun"></div>
+</div>
+
+</body>
+</html>
